@@ -1,0 +1,43 @@
+.modal-container {
+  background-color: rgba(26, 39, 156, 0.4);
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .modal-container {
+    height: initial;
+    top: var(--navbar-height);
+  }
+
+  .modal-body {
+    height: initial;
+  }
+}
+
+.modal-body {
+  height: 100%;
+  padding: 15px 8%;
+  margin: 15px auto;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.error-message {
+  display: none;
+  position: absolute;
+}

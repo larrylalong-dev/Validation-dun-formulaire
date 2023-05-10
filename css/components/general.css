@@ -1,0 +1,45 @@
+:root {
+  --font-default: "DM Sans", Arial, Helvetica, sans-serif;
+  --font-slab: var(--font-default);
+  --modal-duration: 0.8s;
+  --navbar-height: 4rem;
+}
+
+body {
+  font-family: var(--font-default);
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    margin: 0 1rem;
+    justify-content: initial;
+    height: initial;
+  }
+}
+
+.text-overlay {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-between;
+  left: 5%;
+  position: absolute;
+  top: 10%;
+}
+
+@media screen and (max-width: 540px) {
+  .text-overlay {
+    color: #232323;
+    display: block;
+    position: initial;
+    height: initial;
+  }
+}

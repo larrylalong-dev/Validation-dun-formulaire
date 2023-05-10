@@ -1,0 +1,104 @@
+.button {
+  background: #fe142f;
+  margin-top: 0.5em;
+  padding: 1em;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background: #3876ac;
+}
+
+.modal-btn {
+  font-size: 145%;
+  background: #fe142f;
+  display: flex;
+  margin: auto;
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  background: #3876ac;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(0.7);
+  z-index: 1;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 3px;
+  background-color: #fff;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.btn-submit,
+.btn-signup {
+  background: #fe142f;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 7px;
+  font-size: 1rem;
+  padding: 12px 82px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn-signup {
+  outline: none;
+  font-size: 1.3rem;
+  padding: 15px 23px;
+  margin: 0;
+}
+
+.btn-signup.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .btn-signup.desktop {
+    display: none;
+  }
+
+  .btn-signup.mobile {
+    display: block;
+    width: fit-content;
+    font-size: 1rem;
+    margin: 1rem auto;
+  }
+}
+
+.btn-submit:disabled {
+  background-color: grey;
+}
+
+.text-overlay > .btn-signup {
+  width: fit-content;
+}
+

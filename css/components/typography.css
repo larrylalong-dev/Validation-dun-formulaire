@@ -1,0 +1,30 @@
+p {
+  margin-bottom: 0;
+}
+
+
+.text-overlay > p {
+  font-size: larger;
+  margin-top: 0;
+  width: 40%;
+}
+
+@media screen and (max-width: 540px) {
+  .text-overlay > p {
+    width: 100%;
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+  }
+}
+
+h1 {
+  font-size: 5.5rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+}
+
